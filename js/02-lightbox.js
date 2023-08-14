@@ -30,24 +30,24 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionDelay: 250,
 });
 
-document.addEventListener("keyup", function (event) {
-  if (event.keyCode === 27) {
-    lightbox.close();
-  }
-});
+// document.addEventListener("keyup", function (event) {
+//   if (event.keyCode === 27) {
+//     lightbox.close();
+//   }
+// });
 
-lightbox.on("beforeOpen", function () {
-  document.addEventListener("keyup", closeModalOnEscape);
-});
+// lightbox.on("beforeOpen", function () {
+//   document.addEventListener("keyup", closeModalOnEscape);
+// });
 
-lightbox.on("beforeClose", function () {
-  document.removeEventListener("keyup", closeModalOnEscape);
-});
+// lightbox.on("beforeClose", function () {
+//   document.removeEventListener("keyup", closeModalOnEscape);
+// });
 
-function closeModalOnEscape(event) {
-  if (event.keyCode === 27) {
-    lightbox.close();
-  }
-}
+// function closeModalOnEscape(event) {
+//   if (event.keyCode === 27) {
+//     lightbox.close();
+//   }
+// }
 
-// console.log(galleryItems);
+console.log(galleryItems);
